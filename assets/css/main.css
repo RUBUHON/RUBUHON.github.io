@@ -1413,8 +1413,13 @@ section,
   padding: 20px 0;
   list-style: none;
   color: color-mix(in srgb, var(--default-color), transparent 20%);
-  text-align: left;
+  text-align: center; /* Centra el texto dentro de cada elemento */
   line-height: 20px;
+  margin: 0 auto; /* Asegura que el contenedor ul esté centrado */
+  display: flex;
+  flex-direction: column; /* Apila los elementos de la lista de arriba a abajo */
+  align-items: center; /* Centra los elementos de la lista horizontalmente */
+  justify-content: center; /* Centra los elementos de la lista verticalmente */
 }
 
 .pricing ul li {
